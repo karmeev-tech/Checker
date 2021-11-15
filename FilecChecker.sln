@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilecChecker", "FilecChecker\FilecChecker.csproj", "{DB2086AA-91EF-45F9-AAAD-88ABB9A6E72C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB2086AA-91EF-45F9-AAAD-88ABB9A6E72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB2086AA-91EF-45F9-AAAD-88ABB9A6E72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB2086AA-91EF-45F9-AAAD-88ABB9A6E72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB2086AA-91EF-45F9-AAAD-88ABB9A6E72C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9105E8C7-1CCB-4F0B-903A-D13CBC59DD1F}
+	EndGlobalSection
+EndGlobal
