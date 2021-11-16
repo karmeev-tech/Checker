@@ -46,15 +46,14 @@ namespace FilecChecker
 
             string path2 = Directory.GetCurrentDirectory() + "\\check\\";
             DirectoryInfo di = Directory.CreateDirectory(path2);
-            File.Create(path2 + "fixxx.txt");
 
             //изменить метод записи текста в файл
-            FileStream fileStream = null;
-            fileStream = File.Open(path2 + "fixxx.txt", FileMode.Append);
-            StreamWriter output = new StreamWriter(fileStream);
-            output.Write(hashFile);
-            output.Close();
+
+            StreamWriter sw = new StreamWriter(path2 + "fixxx.txt");
+            sw.WriteLine(hashFile);
+            sw.Close();
             Console.WriteLine("Зафиксировано");
+            Console.ReadLine();
         }
 
         public static void Check()
@@ -74,6 +73,8 @@ namespace FilecChecker
             {
                 Console.WriteLine("Файл изменён");
             }
+
+            Console.ReadLine();
         }
 
         public static string Prepare(string path)
@@ -82,9 +83,11 @@ namespace FilecChecker
 
             string hashFile = "";
             int x = 0;
-            while (x != 16)
+            hashFile = hashFile + hash[x].ToString();
+            x++;
+            while (x != 15)
             {
-                hashFile = hashFile + hash[x].ToString() + " ";
+                hashFile += hash[x].ToString();
                 x++;
             }
 
